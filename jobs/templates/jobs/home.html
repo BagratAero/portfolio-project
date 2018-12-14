@@ -20,10 +20,10 @@
       class="navbar navbar-expand-md navbar-light fixed-top py-4"
       id="main-nav"
     >
-      <div class="container">
+      
         <a href="#home" class="navbar-brand">
           <img src="img/mlogo.png" width="50" height="50" alt="" />
-          <h3 class="d-inline align-middle text-danger">Spectre</h3>
+          <h3 class="d-inline align-middle text-danger offset-8">Spectre</h3>
           <h3 class="d-inline align-middle">Aerospace</h3>
         </a>
         <button
@@ -34,10 +34,16 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="#home" class="nav-link"><button class="btn btn-outline-danger " type="button">Home</button></a></li>
+          <ul class="navbar-nav offset-6">
+              <li class="nav-item"><a href="#home" class="nav-link"><div class="input-group width:100">
+                  <input class="form-control form" type="text" placeholder="Search the site... ">
+                  <div class="input-group-append">
+                      <button class="btn btn-outline-danger " type="button">Search</button>
+                  </div>
+              </div></a></li>
+            <li class="nav-item"><a href="#home" class="nav-link"><img src="../../../static/inst.png" width="40"  alt="" /></i></a></li>
             <li class="nav-item">
-              <a href="#about" class="nav-link"><button class="btn btn-outline-success" type="button">About</button></a>
+              <a href="#about" class="nav-link"><img src="../../../static/fb.png" width="50"  alt="" /></a>
             </li>
             <li class="nav-item">
               <a href="#authors" class="nav-link"><button class="btn btn-outline-info" type="button">Team</button></a>
@@ -45,18 +51,19 @@
             <li class="nav-item">
               <a href="#contact" class="nav-link"><button class="btn btn-outline-dark" type="button">Contact</button></a>
             </li>
+            
           </ul>
         </div>
-      </div>
+      
     </nav>
 
     <!-- SHOWCASE -->
     <section id="showcase" class="py-5">
       <div class="primary-overlay text-white">
-        <div class="container">
+        
           <div class="row">
             <div class="col-lg-2 text-center">
-              <h1 class="display-3 mt-5 pt-5 text-danger">Shock</h1>
+              <h1 class="display-3 mt-5 pt-5 text-danger offset-9">Shock</h1>
             </div>
             <div class="col-lg-4 text-center">
               <h1 class="display-3 mt-5 pt-5 text-dark ">your world</h1>
@@ -64,9 +71,9 @@
             
             </div>
           </div>
-          <div class="row">
+          <div class="row mt-5">
             
-            <div class="col-lg-6 offset-5 mt-2">
+            <div class="col-lg-6 offset-5 mt-2 mt-5">
               <img
                 src="../../../static/d4.png"
                 alt=""
@@ -74,7 +81,7 @@
               />
             </div>
           </div>
-        </div>
+        
       </div>
     </section>
 

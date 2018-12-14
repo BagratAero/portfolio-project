@@ -15,7 +15,7 @@ body {
 #showcase {
   position: relative;
   background: url('../mountains.jpg');
-  min-height: 600px;
+  min-height: 575px;
 }
 #showcase .primary-overlay {
   background: rgba(50, 146, 166, 0.4);
