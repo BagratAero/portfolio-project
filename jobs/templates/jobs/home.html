@@ -10,9 +10,18 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../../../static/css2/bootstrap.css" />
-    <link rel="stylesheet" href="../../../static/css2/style.css" />
-    <title>Bootstrap Theme</title>
+
+    <!-- PRODUCTION LINKS-->
+
+      <link rel="stylesheet" href="../../../static/css2/bootstrap.css" />  
+        <link rel="stylesheet" href="../../../static/css2/style.css" />  
+
+        <!-- DEVELOPMENT LINKS-->
+
+    <!-- <link rel="stylesheet" href="../../../portfolio/static/css2/bootstrap.css" />
+    <link rel="stylesheet" href="../../../portfolio/static/css2/style.css" />  -->
+    
+    <title>Spectre Aerospace</title>
   </head>
 
   <body id="home" data-spy="scroll" data-target="#main-nav">
@@ -21,7 +30,7 @@
       id="main-nav"
     >
       
-        <a href="#home" class="navbar-brand">
+        <a href="home.html" class="navbar-brand">
           <img src="img/mlogo.png" width="50" height="50" alt="" />
           <h3 class="d-inline align-middle text-danger offset-8">Spectre</h3>
           <h3 class="d-inline align-middle">Aerospace</h3>
@@ -34,13 +43,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav offset-6">
-              <li class="nav-item"><a href="#home" class="nav-link"><div class="input-group width:100">
-                  <input class="form-control form" type="text" placeholder="Search the site... ">
-                  <div class="input-group-append">
-                      <button class="btn btn-outline-danger " type="button">Search</button>
+          <ul class="navbar-nav offset-7">
+              <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle text-danger" data-toggle="dropdown">Drones</a>
+                  <div class="dropdown-menu">
+                      <a href="lonewolf.html" class="dropdown-item">Lone Wolf</a>
+                      <a href="spark.html" class="dropdown-item">DJI Spark</a>
+                      <a href="tello.html" class="dropdown-item">DJI Tello EDU</a>
                   </div>
-              </div></a></li>
+              </li>
             <li class="nav-item"><a href="#home" class="nav-link"><img src="../../../static/inst.png" width="40"  alt="" /></i></a></li>
             <li class="nav-item">
               <a href="#about" class="nav-link"><img src="../../../static/fb.png" width="50"  alt="" /></a>
@@ -52,65 +63,105 @@
               <a href="#contact" class="nav-link"><button class="btn btn-outline-success" type="button">Contact</button></a>
             </li>
             
+            
           </ul>
         </div>
       
     </nav>
 
-    <!-- SHOWCASE -->
-    <section id="showcase" class="py-5">
-      <div class="primary-overlay text-white">
-        
-          <div class="row">
-            <div class="col-lg-2 text-center">
-              <h1 class="display-3 mt-5 pt-5 text-danger offset-9">Shock</h1>
-            </div>
-            <div class="col-lg-4 text-center">
-              <h1 class="display-3 mt-5 pt-5 text-dark ">your world</h1>
-            </div>
+      <!-- SHOWCASE SLIDER -->
+      
+  <section id="showcase">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+         
+          <div class="carousel-item carousel-image-1 active">
+              
+              <div>mt-5</div>
+              <div>mt-5</div>
+              
+              <h1 class="d-inline display-3  text-danger offset-1 pl-5 "> Shock  </h1> 
+              <h1 class="d-inline display-3 mt-5 text-white ">your world</h1>
             
+
+             <div class="row mt-0">
+              <div class="col-lg-6 offset-5 mt-0">
+              <img src="../../../static/d4.png"alt="" class="img-fluid d-none d-lg-block"/>
+          </div>
+        </div>
+              
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                <h1 class="d-inline display-3 ">Lone </h1>
+                <h1 class="d-inline display-3 text-danger">Wolf </h1>
+                
+                <a href="#" class="btn btn-warning ">Order Now</a>
+              </div>
             </div>
           </div>
-          <div class="row mt-5">
-            
-            <div class="col-lg-6 offset-5 mt-2 mt-5">
-              <img
-                src="../../../static/d4.png"
-                alt=""
-                class="img-fluid d-none d-lg-block"
-              />
+  
+          <div class="carousel-item carousel-image-2">
+
+              <div> </div>
+              <div>  </div>
+              
+              <h1 class="d-inline display-3  text-danger offset-1 pl-5 pt-5 mt-5 "> Empower </h1> 
+              <h1 class="d-inline display-3 mt-5 text-white ">your kids</h1>
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block mb-5 text-right">
+                <h1 class="display-3 text-danger">DJI Spark</h1>
+                
+                <a href="#" class="btn btn-warning ">Order Now</a>
+              </div>
             </div>
           </div>
-        
+  
+          <div class="carousel-item carousel-image-3">
+            <div class="container ml-0 mt-0">
+                <h1 class="d-inline display-3  text-danger offset-1 pl-5 pt-5 mt-5 "> Power  </h1> 
+                <h1 class="d-inline display-3 mt-5 text-white ">your dreams</h1>
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                <h1 class="display-3 text-danger ">DJI Tello EDU</h1>
+                
+                <a href="#" class="btn btn-warning ">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+  
+        <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
     </section>
+    
 
-    <!-- NEWSLETTER -->
-    <section id="newsletter" class="bg-dark text-white py-5">
-      <div class="container">
+    <!-- VIDEO PLAY -->
+
+    <section id="video-play">
+      <div class="dark-overlay">
         <div class="row">
-          <div class="col-md-4">
-            <input
-              type="text"
-              class="form-control form-control-lg mb-resp"
-              placeholder="Enter Name"
-            />
-          </div>
-          <div class="col-md-4">
-            <input
-              type="email"
-              class="form-control form-control-lg mb-resp"
-              placeholder="Enter Email"
-            />
-          </div>
-          <div class="col-md-4">
-            <button class="btn btn-primary btn-lg btn-block">
-              <i class="fas fa-envelope-open-o"></i> Subscribe
-            </button>
+          <div class="col">
+            <div class="container pt-4">
+              <a href="#" class="video" data-video="https://www.youtube.com/embed/FVYxxHn8R-k" data-toggle="modal" data-target="#videoModal">
+                <i class="fas fa-play fa-3x"></i>
+              </a>
+              <h1>See What We Do</h1>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <!-- BOXES -->
     <section id="boxes" class="py-5">
@@ -283,15 +334,15 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <div class="card-body">
                 <img
-                  src="img/person1.jpg"
+                src="../../../static/b1.jpg"
                   alt=""
                   class="img-fluid rounded-circle w-50 mb-3"
                 />
-                <h3>Bagrat</h3>
+                <h3>Bagrat B.</h3>
                 <h5 class="text-muted">CEO</h5>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
@@ -318,50 +369,15 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <div class="card-body">
                 <img
-                  src="img/person2.jpg"
+                src="../../../static/v1.jpg"
                   alt=""
                   class="img-fluid rounded-circle w-50 mb-3"
                 />
-                <h3>Maria</h3>
-                <h5 class="text-muted">COO</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  commodi nostrum, ab libero voluptas officia.
-                </p>
-                <div class="d-flex justify-content-center">
-                  <div class="p-4">
-                    <a href="http://facebook.com">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                  </div>
-                  <div class="p-4">
-                    <a href="http://twitter.com">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </div>
-                  <div class="p-4">
-                    <a href="http://instagram.com">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="../../../static/vv.jpg"
-                  alt=""
-                  class="img-fluid rounded-circle w-50 mb-3"
-                />
-                <h3>Varazdat</h3>
+                <h3>Varazdat V.</h3>
                 <h5 class="text-muted">CMO</h5>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
@@ -388,16 +404,16 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="card">
               <div class="card-body">
                 <img
-                  src="img/person4.jpg"
+                  src="../../../static/m1.jpg"
                   alt=""
                   class="img-fluid rounded-circle w-50 mb-3"
                 />
-                <h3>Narek</h3>
-                <h5 class="text-muted">CAD Designer</h5>
+                <h3>Marianna A.</h3>
+                <h5 class="text-muted">COO</h5>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
                   commodi nostrum, ab libero voluptas officia.
@@ -422,6 +438,8 @@
               </div>
             </div>
           </div>
+
+          
         </div>
       </div>
     </section>
@@ -494,6 +512,20 @@
       </div>
     </footer>
 
+      <!-- VIDEO MODAL -->
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+          <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -511,6 +543,27 @@
     ></script>
 
     <script>
+
+      // Configure Slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    });
+
+    // Video Play
+    $(function () {
+      // Auto play modal video
+      $(".video").click(function () {
+        var theModal = $(this).data("target"),
+          videoSRC = $(this).attr("data-video"),
+          videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+          $(theModal + ' iframe').attr('src', videoSRC);
+        });
+      });
+    });
+
       // Get the current year for the copyright
       $('#year').text(new Date().getFullYear());
 
