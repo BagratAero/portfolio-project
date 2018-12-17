@@ -47,7 +47,7 @@ body {
 #video-play {
   position: relative;
   min-height: 200px;
-  background: url('../h3.jpg');
+
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 -200px;
@@ -60,7 +60,7 @@ body {
 }
 
 .carousel-item {
-  height: 600px;
+  height: 870px;
 }
 
 .carousel-image-1 {
